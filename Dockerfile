@@ -60,10 +60,10 @@ RUN apt-get install -y mingw-w64 \
 #Build arguments
 ARG osxcross_repo="tpoechtrager/osxcross"
 ARG osxcross_revision="a845375e028d29b447439b0c65dea4a9b4d2b2f6"
-ARG darwin_sdk_version="10.10"
+ARG darwin_sdk_version="10.11"
 ARG darwin_osx_version_min="10.6"
-ARG darwin_version="14"
-ARG darwin_sdk_url="https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX${darwin_sdk_version}.sdk.tar.xz"
+ARG darwin_version="15"
+ARG darwin_sdk_url="https://github.com/phracker/MacOSX-SDKs/releases/download/10.13/MacOSX${darwin_sdk_version}.sdk.tar.xz"
 
 # ENV available in docker image
 ENV OSXCROSS_REPO="${osxcross_repo}"                   \
